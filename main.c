@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/17 15:34:46 by evocatur          #+#    #+#             */
+/*   Updated: 2023/02/17 15:35:34 by evocatur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"ft_printf.h"
-int main(void)
+
+int	main(void)
 {
-    printf("enter a number:");    
-    ft_printf("enter a number:");
+	printf("enter %c:", 'p');
+	ft_printf("enter %c:", 'p');
 }

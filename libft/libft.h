@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 11:28:29 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 14:21:36 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/17 15:32:46 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 int			ft_atoi(const char *nptr);
-int			ft_printf(const char *, ...);
 char		*ft_itoa(int temp);
 void		*ft_calloc(size_t nmemb, size_t size);
 int			ft_isalpha(int c);

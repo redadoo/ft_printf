@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 14:27:24 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 15:42:05 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/17 15:50:11 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,7 @@ int	ft_printf(const char *s, ...)
 			s++;
 		if (*s == 's')
 		{
-			w = va_arg(ap, int);
-			while(*w)
-			{
-				write(1, w, 1);
-				w++;
-			}
+			printstring(va_arg(ap, int));
 			s++;
 		}
 		if (*s == 'c')

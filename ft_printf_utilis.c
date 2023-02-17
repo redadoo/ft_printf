@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf_utilis.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 15:34:14 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 15:49:15 by evocatur         ###   ########.fr       */
+/*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
+/*   Updated: 2023/02/17 15:49:01 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include"ft_printf.h"
 
-# include <stdarg.h>
-# include "libft/libft.h"
-
-int		ft_printf(const char *format, ...);
-void    printstring(char *s);
-#endif
+void printstring(char *s)
+{
+    while (*s)
+    {
+        write(1,s,1);
+        s++;
+    }
+}

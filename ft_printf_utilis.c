@@ -6,17 +6,17 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 15:49:01 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/17 15:53:39 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"ft_printf.h"
 
-void printstring(char *s)
+void	printstring(char *s)
 {
-    while (*s)
-    {
-        write(1,s,1);
-        s++;
-    }
+	while (*s)
+	{
+		write(1, s, 1);
+		s++;
+	}
 }

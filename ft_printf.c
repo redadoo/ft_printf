@@ -6,15 +6,16 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 14:27:24 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 14:32:56 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/17 14:45:03 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_printf(const char *, ...)
+#include"ft_printf.h"
+
+int ft_printf(const char *s, ...)
 {
 	va_list ap;
-	int i;
 
-
-	va_start(ap,num_args);
-}
+	va_start(ap,s);
+    return (0);
+}   

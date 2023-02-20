@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 14:27:24 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 15:52:54 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/20 11:04:37 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,27 @@
 int	ft_printf(const char *s, ...)
 {
 	va_list	ap;
-	char	k;
-	char	*w;
-
+	char c;
 	va_start(ap, s);
 	while (*s)
 	{
 		if (*s == '%')
 			s++;
+		if(*s == ' ' || *s == '+')
+			flag((char *)s);
 		if (*s == 's')
 		{
-			printstring(va_arg(ap, int));
+			printstring(va_arg(ap, char *));
 			s++;
 		}
 		if (*s == 'c')
-			write(1, va_arg(ap, int), 1);
-		write(1, s, 1);
+		{
+			c = va_arg(ap, int);
+			write(1, &c, 1);
+			s++;
+		}
+		if(*s)
+			write(1, s, 1);
 		s++;
 	}
 	return (0);

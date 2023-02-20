@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:34:14 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/17 15:53:11 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/20 10:58:17 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,5 @@
 
 int		ft_printf(const char *format, ...);
 void	printstring(char *s);
+void    flag(char *str);
 #endif

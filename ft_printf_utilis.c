@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/20 10:15:32 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/20 12:07:32 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 void	printstring(char *s)
 {
+    if(s == NULL)
+    {
+        write(1,"(null)",6);
+    }
 	while (*s)
 	{
 		write(1, s, 1);
@@ -21,9 +25,9 @@ void	printstring(char *s)
 	}
 }
 
-void flag(char *str)
+void number(int i)
 {
-	char c;
-
-	c = *str;
+    char *s = NULL;
+    s = ft_itoa(i);
+    printstring(s);
 }

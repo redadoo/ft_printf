@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:34:14 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/20 10:58:17 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/20 12:20:50 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
+# include <unistd.h>
 # include "libft/libft.h"
 
 int		ft_printf(const char *format, ...);
 void	printstring(char *s);
 void    flag(char *str);
+void    number(int i);
 #endif

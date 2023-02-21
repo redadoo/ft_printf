@@ -16,6 +16,7 @@ int	ft_printf(const char *s, ...)
 {
 	va_list	ap;
 	char c;
+	
 	va_start(ap, s);
 	while (*s)
 	{

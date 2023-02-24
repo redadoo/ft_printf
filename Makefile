@@ -6,15 +6,15 @@
 #    By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/17 14:40:46 by evocatur          #+#    #+#              #
-#    Updated: 2023/02/23 15:59:30 by evocatur         ###   ########.fr        #
+#    Updated: 2023/02/24 13:03:17 by evocatur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #variable
 
-NAME = libftprintf.a
+NAME = libftprintf.a libft/libtf.a
 
-SRCS = ft_printf.c ft_printf_utilis.c libft/itoa.c
+SRCS = ft_printf.c ft_printf_utilis.c
 
 LIBFT = libft/
 

@@ -2,8 +2,11 @@
 
 int main(void)
 {
-    ft_printf("ciao %e", 32.114);
-    printf("\n");
-    printf("ciao %e",32.114);
-    printf("\n");
+        int i;
+
+        i = ft_printf("hex %#x", 1643);
+        ft_printf("%c",'\n');
+        ft_printf("%d",i);
+        ft_printf("%c",'\n');
+        printf("hex %#x", 1643);
 }

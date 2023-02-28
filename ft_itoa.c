@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/23 16:43:06 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/10 18:33:59 by evocatur         ###   ########.fr       */
+/*   Created: 2023/02/28 08:26:55 by evocatur          #+#    #+#             */
+/*   Updated: 2023/02/28 08:50:01 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include"ft_printf.h"
 
 static int	len(long nb)
 {

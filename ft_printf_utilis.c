@@ -6,15 +6,15 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/24 14:04:39 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/28 10:08:12 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"ft_printf.h"
 
-int strlen2(char *s)
+int	strlen2(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*s)
@@ -22,18 +22,18 @@ int strlen2(char *s)
 		s++;
 		i++;
 	}
-	
 	return (i);
 }
 
 int	printstring(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (s == NULL)
 	{
 		write(1, "(null)", 6);
+		return (6);
 	}
 	while (*s)
 	{
@@ -48,18 +48,21 @@ int	printchars(int c)
 {
 	char	i;
 
-	if (c)
-	{
-		i = (char)c;
-		write(1, &i, 1);
-		return (1);
-	}
-	return (0);
+	i = (char)c;
+	write(1, &i, 1);
+	return (1);
 }
 
 int	printdigit(int n)
 {
-	return (printstring(ft_itoa(n)));
+	int	i;
+	char *s;
+
+
+	s = ft_itoa(n);
+	i = printstring(s);
+	free(s);
+	return (i);
 }
 
 char	*upperstring(char *s)
@@ -73,13 +76,13 @@ char	*upperstring(char *s)
 	return (s);
 }
 
-int reverseprintstring(char *s)
+int	reverseprintstring(char *s)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = strlen2(s);
-	j = i;
+	j = 0;
 	if (s == NULL)
 	{
 		write(1, "(null)", 6);
@@ -87,9 +90,10 @@ int reverseprintstring(char *s)
 	}
 	while (i != 0)
 	{
-		write(1,&s[i],1);
+		j +=printchars(s[i]);
 		i--;
+		printf("9%c9",s[i]);
 	}
-	write(1,&s[i],1);
+	//j +=printchars(s[i]);
 	return (j);
 }

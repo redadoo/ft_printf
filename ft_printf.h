@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:34:14 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/24 13:07:43 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/28 11:21:04 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,21 @@
 # include <stdio.h>
 # include <stddef.h>
 # include <stdlib.h>
-# include "libft/libft.h"
+# include <stdint.h>
 
 int		ft_printf(const char *format, ...);
 int		printstring(char *s);
 int		printdigit(int n);
 int		printchars(int c);
-int     flag(const char *str,va_list ap);
+int		flag(const char *str, va_list ap);
 char	*ft_uitoa(unsigned int temp);
 char	*upperstring(char *s);
-int     reverseprintstring(char *S);
+int		reverseprintstring(char *S);
+char	*ft_itoa(int temp);
+int     convertunsigned(int n);
+void    reverse(char *s);
+int     string_length(char *pointer);
+int     print_address_hex(void* p0);
+char    hex_digit(int v);
 
 #endif

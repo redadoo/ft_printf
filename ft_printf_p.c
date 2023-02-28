@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_printf_p.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/25 15:44:29 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/09 14:49:33 by evocatur         ###   ########.fr       */
+/*   Created: 2023/02/28 10:39:18 by evocatur          #+#    #+#             */
+/*   Updated: 2023/02/28 11:37:26 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_lstsize(t_list *lst)
+int print_address_hex(void* p0) 
 {
-	size_t	i;
+    int j;
+    uintptr_t p;
 
-	i = 0;
-	while (lst)
-	{
-		lst = lst->next;
-		i++;
-	}
-	return (i);
+    j = 0;
+    p = (uintptr_t)p0;
+    j += printchars('0'); 
+    j += printchars('x');
+
+    return (j);
 }

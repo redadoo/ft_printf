@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/28 12:12:09 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/28 12:29:40 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,6 @@ int	flag(const char *str, va_list ap)
 	if (*str == 'x')
 	{
 		s = decimatohex(va_arg(ap, int));
-		printf("\n%s\n",s);
 		while (s[i])
 		{
 			if (s[i] >= 65 && s[i] <= 90)

@@ -3,6 +3,5 @@
 int main(void)
 {
   int i,j,k,l,m,n;
-  j = ft_printf("%p",1);
-  //rintf("\n%i",j);
+  j = ft_printf("%x", -100);
 }

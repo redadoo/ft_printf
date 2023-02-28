@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 14:27:24 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/28 12:07:50 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/28 13:49:44 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 int	ft_printf_aus(va_list ap, const char *s)
 {
+	if (*s == 'x' || *s == 'X' || *s == '#')
+		return (flag(s, ap));
 	if (*s == 'p')
-		return(ft_printf("%#x",va_arg(ap, void*)));
+		return(ft_print_ptr(va_arg(ap, long long)));
 	if (*s == 'u')
 		return (convertunsigned(va_arg(ap, int)));
 	if (*s == '%')
@@ -26,8 +28,6 @@ int	ft_printf_aus(va_list ap, const char *s)
 		return (printstring(va_arg(ap, char *)));
 	if (*s == 'c')
 		return (printchars(va_arg(ap, int)));
-	if (*s == 'x' || *s == 'X' || *s == '#')
-		return (flag((char *)s, ap));
 	return (0);
 }
 

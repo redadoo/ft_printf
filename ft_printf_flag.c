@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/28 12:29:40 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/02/28 13:54:59 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	flag(const char *str, va_list ap)
 		free(s);
 		return (j);
 	}
-	if (*str == 'X')
+/* 	if (*str == 'X')
 	{
 		s = decimatohex(va_arg(ap, int));
 		while (s[i])
@@ -92,7 +92,7 @@ int	flag(const char *str, va_list ap)
 		j += printstring(s);
 		free(s);
 		return (j);
-	}
+	} */
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 11:10:29 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/28 09:37:39 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/03/01 12:48:52 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ static char	*aus(unsigned int x, char *newstr, int i)
 static char	*countdigit(unsigned int x, char *newstr)
 {
 	unsigned int		temp;
-	int		i;
+	int					i;
 
 	temp = x;
 	i = len(temp) + 1;
@@ -91,11 +91,11 @@ char	*ft_uitoa(unsigned int temp)
 	return (newstr);
 }
 
-int convertunsigned(int n)
+int	convertunsigned(int n)
 {
-	int	i;
-	unsigned int j;
-	char *s;
+	int				i;
+	unsigned int	j;
+	char			*s;
 
 	if (n >= 0)
 	{

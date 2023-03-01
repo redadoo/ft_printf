@@ -6,24 +6,11 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:47:37 by evocatur          #+#    #+#             */
-/*   Updated: 2023/02/28 10:08:12 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/03/01 12:47:40 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"ft_printf.h"
-
-int	strlen2(char *s)
-{
-	int	i;
-
-	i = 0;
-	while (*s)
-	{
-		s++;
-		i++;
-	}
-	return (i);
-}
 
 int	printstring(char *s)
 {
@@ -55,45 +42,11 @@ int	printchars(int c)
 
 int	printdigit(int n)
 {
-	int	i;
-	char *s;
-
+	int		i;
+	char	*s;
 
 	s = ft_itoa(n);
 	i = printstring(s);
 	free(s);
 	return (i);
-}
-
-char	*upperstring(char *s)
-{
-	while (s)
-	{
-		if (*s >= 97 && *s <= 122)
-			*s = *s - 32;
-		s++;
-	}
-	return (s);
-}
-
-int	reverseprintstring(char *s)
-{
-	int	i;
-	int	j;
-
-	i = strlen2(s);
-	j = 0;
-	if (s == NULL)
-	{
-		write(1, "(null)", 6);
-		return (0);
-	}
-	while (i != 0)
-	{
-		j +=printchars(s[i]);
-		i--;
-		printf("9%c9",s[i]);
-	}
-	//j +=printchars(s[i]);
-	return (j);
 }

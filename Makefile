@@ -6,7 +6,7 @@
 #    By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/17 14:40:46 by evocatur          #+#    #+#              #
-#    Updated: 2023/02/28 13:41:55 by evocatur         ###   ########.fr        #
+#    Updated: 2023/03/01 12:18:46 by evocatur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 NAME = libftprintf.a
 
-SRCS = ft_printf.c ft_printf_utilis.c  ft_printf_unsigned.c ft_itoa.c ft_printf_p.c
+SRCS = ft_printf.c ft_printf_utilis.c  ft_printf_unsigned.c ft_itoa.c ft_printf_p.c ft_printf_hex.c
 
 LIBFT = libft/
 
@@ -35,8 +35,8 @@ CFLAGS = -Wall -Wextra -Werror
 
 $(NAME): ${OBJS}
 		ar rcs ${NAME} ${OBJS}
-bonus : ${OBJSBONUS}
-		ar rcs ${NAME} ${OBJSBONUS}
+bonus : ${OBJSBONUS} ${OBJS} 
+		ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
 
 all:	${NAME}
 

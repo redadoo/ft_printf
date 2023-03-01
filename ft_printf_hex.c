@@ -6,7 +6,7 @@
 /*   By: evocatur <evocatur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 09:30:25 by evocatur          #+#    #+#             */
-/*   Updated: 2023/03/01 12:52:36 by evocatur         ###   ########.fr       */
+/*   Updated: 2023/03/01 13:20:22 by evocatur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ int	ft_len_hex(unsigned int num)
 
 void	ft_put_hex(unsigned int num, char c)
 {
-	char	t;
-
 	if (num >= 16)
 	{
 		ft_put_hex(num / 16, c);
@@ -38,15 +36,14 @@ void	ft_put_hex(unsigned int num, char c)
 	{
 		if (num <= 9)
 		{
-			if ((c == 'X') && (t >= 'a' && t <= 'z'))
+			if ((c == 'X') && num + '0' >= 'a' && num + '0' <= 'z')
 				printchars((num + '0') - 32);
 			else
 				printchars((num + '0'));
 		}
 		else
 		{
-			t = num - 10 + 'a';
-			if ((c == 'X') && (t >= 'a' && t <= 'z'))
+			if ((c == 'X') && num - 10 + 'a' >= 'a' && num - 10 + 'a' <= 'z')
 				printchars((num - 10 + 'a') - 32);
 			else
 				printchars((num - 10 + 'a'));

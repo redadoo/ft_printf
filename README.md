@@ -1,3 +1,8 @@
 # ft_printf
 
-This project is pretty straightforward, you have to recode printf. You will learn what is and how to implement variadic functions.
+![GitHub repo size](https://img.shields.io/github/repo-size/redadoo/ft_printf)
+![GitHub contributors](https://img.shields.io/github/contributors/redadoo/ft_printf)
+![GitHub stars](https://img.shields.io/github/stars/redadoo/ft_printf?style=social)
+![GitHub forks](https://img.shields.io/github/forks/redadoo/ft_printf?style=social)
+
+ft_printf is a project aimed at recreating the functionality of the standard C function printf(). The project focuses on implementing various format specifiers and flags supported by printf() while adhering to the requirements specified in the project guidelines.

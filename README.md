@@ -14,6 +14,8 @@
 
 ft_printf is a project aimed at recreating the functionality of the standard C function printf(). The project focuses on implementing various format specifiers and flags supported by printf() while adhering to the requirements specified in the project guidelines.
 
+read [Subject]([repository-url/blob/branch-name/path/to/file](https://github.com/redadoo/ft_printf/blob/master/en.subject.pdf)) for more info
+
 ## Usage
 
 ft_printf is contained in the library [ft_libft](https://github.com/redadoo/ft_libft)

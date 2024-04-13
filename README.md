@@ -12,7 +12,7 @@
 
 ## About
 
-ft_printf is a project aimed at recreating the functionality of the standard C function printf(). The project focuses on implementing various format specifiers and flags supported by printf() while adhering to the requirements specified in the project guidelines.
+ft_printf is a project aimed at recreating the functionality of the standard C function printf(). The project focuses on implementing various format specifiers and flags supported by printf().
 
 this project is part of the common core of 42.
 read [Subject](https://github.com/redadoo/ft_printf/blob/master/en.subject.pdf) for more info
